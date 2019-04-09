@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Regular.ttf') format('truetype'),
+        url('../fonts/GoogleSans-Bold.ttf') format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+body {
+    top: 0;
+    left: 0;
+    font-family: 'Google Sans', 'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar {
+    display: block;
+    overflow: auto;
+    height: 2em;
+    width: 3px;
+    height: 8px;
+    background-color: #aaa;
+    /* or add it to the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+/* 
+#troll{
+    text-align: center;
+} */
+
+.far,
+.fab.fa-dev,
+.fas.fa-code-branch{
+    color: teal;
+}
+
+.Blink {
+    animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+span.navbar-text {
+    padding-left: 10px;
+}
+
+footer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 960px;
+}
+
+#stdout{
+    background: #FDF5E3;
+    margin-top: -10px;
+    height: calc(100vh - 170px);
+    overflow: auto;
+}
+
+.alert{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .float-left{
+    margin-top: 5px;
+}
+
