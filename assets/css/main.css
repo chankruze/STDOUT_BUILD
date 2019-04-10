@@ -74,14 +74,15 @@ footer {
 
 #stdout{
     background: #FDF5E3;
-    margin-top: -10px;
+    margin-top: -15px;
     height: calc(100vh - 170px);
     overflow: auto;
 }
 
 .alert{
-    margin-top: 5px;
     text-align: center;
+    background: transparent;
+    border: none;
 }
 
 .footer .float-left{
