@@ -117,13 +117,9 @@
                     }
                 }
 
-                function disconnect(){
-                    exec(dirname(__FILE__) . '/kill-nc.sh');
-                }
-                
                 function connect(){
 
-                    $result = liveExecuteCommand("nc -lp 3333");
+                    $result = liveExecuteCommand("nc -l 3333");
 
                     if($result['exit_code'] === 0){
                         echo "<script type='text/javascript'>
@@ -135,6 +131,16 @@
                         stdout.scrollTop = stdout.scrollHeight - stdout.clientHeight;</script>";
                         disconnect();
                     }
+                }
+
+                function disconnect(){
+                    shell_exec('sudo kill-nc-listener');
+                }
+
+                function clean_console(){
+                    echo "<script type='text/javascript'>
+                    $('#stdout').innerHTML = '';
+                    </script>";
                 }
 
                 ?>

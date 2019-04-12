@@ -1,3 +1,3 @@
-$(document).ready(function () {
-    $('#stdout').innerHTML = "";
-});
+// $(document).ready(function () {
+//     $('#stdout').innerHTML = "";
+// });
